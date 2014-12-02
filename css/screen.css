@@ -1814,8 +1814,7 @@ header .header__form .form__form button, .header--bottom .header__form .form__fo
 .review__controls .carousel-control.left { background: url('../img/icons-sbf1b2b966e.png') 0 -247px no-repeat; width: 37px; height: 37px; right: 47px; left: auto; }
 .review__controls .carousel-control.right { background: url('../img/icons-sbf1b2b966e.png') 0 -200px no-repeat; width: 37px; height: 37px; }
 
-.header--bottom { background: url(../img/header--bottom_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; padding-top: 40px; }
-.header--bottom .intro__form--bottom { position: relative; top: 135px; }
+.header--bottom { background: url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 
 footer { box-sizing: border-box; background: #002465; padding: 40px 0; font-size: 13px; position: relative; color: #d0dbef; }
 footer .footer__left { float: left; text-align: left; }
