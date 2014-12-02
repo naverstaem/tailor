@@ -1801,6 +1801,19 @@ header .header__form .form__form button, .header--bottom .header__form .form__fo
 .work .item p { font-family: "proxima_nova_rgregular"; font-size: 16px; color: #ffffff; display: block; margin-top: 15px; }
 .work .item img { display: block; margin: 0 auto; }
 
+.review { padding: 60px 0; border-bottom-width: 7px; border-image: url(../img/wave.png); border-image-repeat: repeat; border-image-slice: 0 1 7 1; }
+.review h2 { text-align: right; font-family: "turbotabook"; margin: 0; }
+.review__img { display: inline-block; width: 81px; height: 81px; margin-right: 20px; margin-bottom: 15px; }
+.review__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.review__name { display: inline-block; vertical-align: middle; }
+.review__name h3 { font-family: "proxima_nova_rgregular"; font-size: 16px; text-transform: uppercase; color: #000; margin: 0; }
+.review__name h4 { font-family: "proxima_nova_rgregular"; font-size: 12px; color: #b8b8b8; margin: 0; }
+.review__text { font-family: "proxima_nova_rgregular"; font-size: 16px; color: #838383; }
+.review__controls { position: relative; margin-top: 25px; }
+.review__controls .carousel-control { background-image: none; width: 37px; height: auto; }
+.review__controls .carousel-control.left { background: url('../img/icons-sbf1b2b966e.png') 0 -247px no-repeat; width: 37px; height: 37px; right: 47px; left: auto; }
+.review__controls .carousel-control.right { background: url('../img/icons-sbf1b2b966e.png') 0 -200px no-repeat; width: 37px; height: 37px; }
+
 .header--bottom { background: url(../img/header--bottom_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; padding-top: 40px; }
 .header--bottom .intro__form--bottom { position: relative; top: 135px; }
 

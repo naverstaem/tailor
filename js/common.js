@@ -35,16 +35,16 @@ head.ready(function() {
 //        $('.top').toggleClass('tiny', $(document).scrollTop() > 0);
 //    });
 
-    $(document).ready(function () {
-        $('#items').on('click', 'img', function () {
-            if($(this).closest('div').hasClass('is-active'))
-                return; $('.is-active').not($(this).closest('div').addClass('is-active')).removeClass('is-active');
-            // fade out all open subcontents
-            $('.reviews__body:visible').hide(600);
-            // fade in new selected subcontent
-            $('.reviews__body[id=' + $(this).attr('data-id') + ']').show(600);
-        }).find('img:first').click();
-    });
+    //$(document).ready(function () {
+    //    $('#items').on('click', 'img', function () {
+    //        if($(this).closest('div').hasClass('is-active'))
+    //            return; $('.is-active').not($(this).closest('div').addClass('is-active')).removeClass('is-active');
+    //        // fade out all open subcontents
+    //        $('.reviews__body:visible').hide(600);
+    //        // fade in new selected subcontent
+    //        $('.reviews__body[id=' + $(this).attr('data-id') + ']').show(600);
+    //    }).find('img:first').click();
+    //});
 
 
     $('#form1').validate();
@@ -54,39 +54,39 @@ head.ready(function() {
     $('#form5').validate();
     $('#form6').validate();
 
-    $("#form5").ajaxForm({
-        success: function () {
-            $(".thanks-link").trigger('click');
-        },
-        data: {
-            title: 'Спасибо!'
-        }
-    });
-    $("#form6").ajaxForm({
-        success: function () {
-            $(".thanks-link").trigger('click');
-        },
-        data: {
-            title: 'Спасибо!'
-        }
-    });
+    //$("#form5").ajaxForm({
+    //    success: function () {
+    //        $(".thanks-link").trigger('click');
+    //    },
+    //    data: {
+    //        title: 'Спасибо!'
+    //    }
+    //});
+    //$("#form6").ajaxForm({
+    //    success: function () {
+    //        $(".thanks-link").trigger('click');
+    //    },
+    //    data: {
+    //        title: 'Спасибо!'
+    //    }
+    //});
 
-    $('.fancybox').fancybox({
-        helpers:{
-            overlay: {
-                locked: false,
-                css:{'background' : 'rgba(#000000, 0.6)'}
-            }
-        },
-        tpl: {
-            closeBtn: '<div class="myFancyClose"></div>'
-        }
-        ,
-        beforeShow: function(){
-            $(".fancybox-skin").css("backgroundColor","transparent");
-            $(".fancybox-skin").css("boxShadow","none");
-        }
-    });
+    //$('.fancybox').fancybox({
+    //    helpers:{
+    //        overlay: {
+    //            locked: false,
+    //            css:{'background' : 'rgba(#000000, 0.6)'}
+    //        }
+    //    },
+    //    tpl: {
+    //        closeBtn: '<div class="myFancyClose"></div>'
+    //    }
+    //    ,
+    //    beforeShow: function(){
+    //        $(".fancybox-skin").css("backgroundColor","transparent");
+    //        $(".fancybox-skin").css("boxShadow","none");
+    //    }
+    //});
     //$('.slick').slick({
     //    slidesToShow: 3,
     //    slidesToScroll: 1
