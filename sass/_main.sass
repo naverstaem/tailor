@@ -290,9 +290,84 @@ header
 
 
 .specs
+  padding-top: 70px
+  h2
+    font-family: 'turbotaheavy'
+    font-size: 25px
+    color: #0a0a0a
+    span
+      font-family: 'turbotabolditalic'
+      color: #10a076
+  .row
+    &:first-of-type
+      img
+        margin-left: -45px
+        margin-top: 20px
+      padding-bottom: 30px
+      border-bottom: solid 1px #dedede
+    &:nth-child(2)
+      padding-top: 40px
+    &:last-of-type
+      p
+        color: #2e242f
+        font-size: 29px
+        font-family: 'turbotabolditalic'
+        margin-top: 40px
+      img
+        margin-top: -60px
 
-
-
+  &__features
+    font-size: 20px
+    color: #2e242f
+    font-family: 'proxima_nova_rgregular'
+    list-style: none
+    padding-left: 0
+    margin-top: 150px
+    li
+      position: relative
+      margin-top: 25px
+      padding-left: 45px
+      &:before
+        position: absolute
+        content: ''
+        +s(list-ico2)
+        top: 5px
+        left: 0
+      &:nth-child(2),&:nth-child(3)
+        &:before
+          top: -5px
+  &__complectation
+    margin-top: 40px
+    font-size: 20px
+    color: #2e242f
+    display: inline-block
+    h3
+      font-family: 'proxima_nova_rgbold'
+      text-transform: uppercase
+    ul
+      font-family: 'proxima_nova_rgregular'
+      list-style: none
+      padding-left: 0
+      margin-top: 17px
+      li
+        position: relative
+        padding-left: 30px
+        line-height: 1.2em
+        &:before
+          position: absolute
+          content: ''
+          +s(list-ico3)
+          top: 3px
+          left: 0
+  &__material
+    @extend .specs__complectation
+    vertical-align: top
+    margin-left: 20px
+    ul
+      li
+        padding-left: 0
+        &:before
+          background: none
 
 
 .reviews
