@@ -533,9 +533,9 @@ footer
     a
       display: inline-block
       color: #f5e047
-      text-decoration: none
+      text-decoration: underline
       &:hover
-        text-decoration: underline
+        text-decoration: none
   .footer__bottom
     margin-top: 12px
     span
@@ -543,120 +543,42 @@ footer
 
 
 
-
-//=============================================
-//popup forms
-//=============================================
-
-.callback
-  background: #fff
-  padding: 20px 23px 35px
-  text-align: center
-  max-width: 352px
-  h2
-    font-family: 'open_sanssemibold'
-    font-size: 26px
-    color: #171717
-    position: relative
-    &:after
-      position: absolute
-      bottom: -25px
-      left: 50%
-      +transform(translate(-50%))
-      content: ''
-      background: url(../img/wave2.png) no-repeat
-      width: 124px
-      height: 5px
-
-  form
-    margin-top: 50px
-    input
-      width: 100%
-      height: 50px
-      margin-bottom: 14px
-      padding-left: 15px
-      font-size: 15px
-      +border-radius(2px)
-      +background-clip(padding-box)
-      background-color: #fff
-      border: 1px solid #e6e6e6
-      @include box-shadow(inset 0 0 2px rgba(0,0,0,.06))
-      &:focus
-        @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
-
-    .btn--callback
-      vertical-align: top
-      height: 59px
-      width: 100%
-      font-size: 20px
-      margin-top: 20px
-      span
-        position: relative
-        display: inline-block
-        +s(button-ico)
-        vertical-align: middle
-        left: 10px
-
-
-.thanks
-  text-align: center
-  color: #2e2e2e
-  background: #ffffff
-  padding: 30px 0
-  max-width: 423px
-  &__img
-    margin-bottom: 15px
-    display: inline-block
-    position: relative
-    width: 100px
-    height: 100px
-    +border-radius(50%)
-    &:before, &:after
-      position: absolute
-      background: url(../img/wave3.png) no-repeat
-      width: 100%
-      max-width: 106px
-      height: 5px
-      content: ''
-      left: -70px
-      top: 50%
-      +transform(translate(-50%))
-    &:after
-      right: -166px
-      left: auto
-
-  h2
-    font-weight: normal
-    font-size: 46px
-    line-height: 1em
-    font-family: 'open_sansbold'
-  h3
-    font-weight: normal
-    font-size: 28px
-    line-height: 1em
-    margin-bottom: 8px
-    margin-top: 0
-    font-family: 'open_sanssemibold'
-  h4
-    font-weight: normal
-    font-size: 18px
-    line-height: 1.2em
-    padding: 0 30px
-    font-family: 'open_sanslight'
-.order
-  @extend .callback
-
-
-
-
-
-
+//media queries
 
 @media (max-width: $screen-md-min)
-
+  .specs
+    .row
+      &:nth-child(2), &:first-of-type
+        img
+          max-width: 100%
+  header
+    .header__form
+      background: rgba(#fff,.7)
+      +border-radius(15px)
+      padding: 10px
 
 @media (max-width: $screen-sm-min)
-  h2
+  .about
+    .row
+      &:first-of-type, &:last-child
+        img
+          max-width: 100%
+  .specs
+    .row
+      &:last-of-type
+        img
+          max-width: 100%
+
+  header
+    .header__title
+      h1
+        font-size: 48px
+      h2
+        text-align: left
+  .why__text
+    h2
+      span
+        font-size: 36px
     //font-size: 36px !important
   //.navbar-default
   //  .navbar-nav

@@ -1836,24 +1836,15 @@ header .header__form .form__form button, .header--bottom .header__form .form__fo
 .also .item form button span { position: relative; background: url('../img/icons-s071bf0e592.png') 0 0 no-repeat; width: 9px; height: 10px; left: 3px; display: inline-block; }
 
 footer { background: #14644c; padding: 25px 0; font-size: 14px; position: relative; color: #d0dbef; font-family: "proxima_nova_rgregular"; text-align: center; }
-footer .footer__top a { display: inline-block; color: #f5e047; text-decoration: none; }
-footer .footer__top a:hover { text-decoration: underline; }
+footer .footer__top a { display: inline-block; color: #f5e047; text-decoration: underline; }
+footer .footer__top a:hover { text-decoration: none; }
 footer .footer__bottom { margin-top: 12px; }
 footer .footer__bottom span { margin-left: 10px; }
 
-.callback, .order { background: #fff; padding: 20px 23px 35px; text-align: center; max-width: 352px; }
-.callback h2, .order h2 { font-family: "open_sanssemibold"; font-size: 26px; color: #171717; position: relative; }
-.callback h2:after, .order h2:after { position: absolute; bottom: -25px; left: 50%; -moz-transform: translate(-50%); -ms-transform: translate(-50%); -webkit-transform: translate(-50%); transform: translate(-50%); content: ""; background: url(../img/wave2.png) no-repeat; width: 124px; height: 5px; }
-.callback form, .order form { margin-top: 50px; }
-.callback form input, .order form input { width: 100%; height: 50px; margin-bottom: 14px; padding-left: 15px; font-size: 15px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; border: 1px solid #e6e6e6; -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.06); box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.06); }
-.callback form input:focus, .order form input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
-.callback form .btn--callback, .order form .btn--callback { vertical-align: top; height: 59px; width: 100%; font-size: 20px; margin-top: 20px; }
-.callback form .btn--callback span, .order form .btn--callback span { position: relative; display: inline-block; background: url('../img/icons-s071bf0e592.png') 0 0 no-repeat; width: 9px; height: 10px; vertical-align: middle; left: 10px; }
-
-.thanks { text-align: center; color: #2e2e2e; background: #ffffff; padding: 30px 0; max-width: 423px; }
-.thanks__img { margin-bottom: 15px; display: inline-block; position: relative; width: 100px; height: 100px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-.thanks__img:before, .thanks__img:after { position: absolute; background: url(../img/wave3.png) no-repeat; width: 100%; max-width: 106px; height: 5px; content: ""; left: -70px; top: 50%; -moz-transform: translate(-50%); -ms-transform: translate(-50%); -webkit-transform: translate(-50%); transform: translate(-50%); }
-.thanks__img:after { right: -166px; left: auto; }
-.thanks h2 { font-weight: normal; font-size: 46px; line-height: 1em; font-family: "open_sansbold"; }
-.thanks h3 { font-weight: normal; font-size: 28px; line-height: 1em; margin-bottom: 8px; margin-top: 0; font-family: "open_sanssemibold"; }
-.thanks h4 { font-weight: normal; font-size: 18px; line-height: 1.2em; padding: 0 30px; font-family: "open_sanslight"; }
+@media (max-width: 992px) { .specs .row:nth-child(2) img, .specs .row:first-of-type img { max-width: 100%; }
+  header .header__form, .header--bottom .header__form { background: rgba(255, 255, 255, 0.7); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px; } }
+@media (max-width: 768px) { .about .row:first-of-type img, .about .row:last-child img { max-width: 100%; }
+  .specs .row:last-of-type img { max-width: 100%; }
+  header .header__title h1, .header--bottom .header__title h1 { font-size: 48px; }
+  header .header__title h2, .header--bottom .header__title h2 { text-align: left; }
+  .why__text h2 span { font-size: 36px; } }
