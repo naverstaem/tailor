@@ -94,6 +94,7 @@
 
 header
   background: url(../img/header_bg.jpg)
+  +box-shadow(0 35px 150px -50px black)
   +cover
   position: relative
   +box
@@ -187,9 +188,58 @@ header
         display: block
 
 .intro
+  background: rgb(16,160,118)
+  padding: 35px
+  text-align: center
+  font-family: 'proxima_nova_ltlight'
+  font-size: 18px
+  color: #ffffff
+  position: relative
+  .intro__down
+    position: absolute
+    top: -23px
+    left: 50%
+    +transform(translateX(-50%))
+    width: 46px
+    height: 46px
+    +border-radius(50%)
+    +box-shadow(0 2px 0 #d04817)
+    +background-image(linear-gradient(to bottom, #ff7145 -25%, #ff4a11 125%))
+    &:before
+      position: absolute
+      content: ''
+      top: 50%
+      left: 50%
+      +transform(translate(-50%,-50%))
+      +s(down-ico)
+
+
+
 
 .about
+  padding-top: 60px
+  color: #0b0b0b
+  h2
+    text-align: left
 
+  h3
+    font-size: 20px
+    font-family: 'proxima_novaregular_italic'
+  p
+    font-size: 16px
+    font-family: 'proxima_nova_rgregular'
+  .row
+    &:first-of-type
+      margin-top: 30px
+      img
+        margin-left: -45px
+      p
+        margin-top: 30px
+    &:last-child
+      margin-top: 15px
+      p
+        &:first-child
+          margin-top: 100px
 .why
 
 
