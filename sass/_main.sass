@@ -448,12 +448,6 @@ header
 
 
 
-
-
-
-
-
-
 .header--bottom
   @extend header
   background: url(../img/header_bg.jpg)
@@ -462,6 +456,68 @@ header
 
 
 .also
+  background: rgb(16, 160,118)
+  padding-top: 40px
+  padding-bottom: 85px
+  h2
+    color: #ffffff
+  .item
+    border: 2px solid rgba(29,30,31,.13)
+    @include border-radius(10px)
+    background-color: #fff
+    padding: 20px
+    text-align: center
+    font-family: 'proxima_nova_rgregular'
+    margin-top: 40px
+    h3
+      font-size: 22px
+      color: #3b3b3b
+      margin-top: 10px
+    img
+      display: inline-block
+      width: 152px
+      height: 152px
+      margin: 20px 0
+      img
+        +border-radius(50%)
+    .price-b--old
+      font-size: 18px
+      color: #3b3b3b
+      span
+    .price-b
+      font-size: 36px
+      color: #ed1b24
+      line-height: 1em
+      margin-bottom: 20px
+    form
+      input
+        +placeholder
+          font-family: 'proxima_novalight_italic'
+          font-size: 16px
+          color: #949494
+        height: 40px
+        width: 100%
+        border: 1px solid rgba(29,30,31,.13)
+        +border-radius(21px)
+        margin-bottom: 10px
+        font-size: 16px
+        padding-left: 58px
+        &[name="name"]
+          background: #ffffff url(../img/name.png) no-repeat 20px 9px
+        &[name="email"]
+          background: #ffffff url(../img/email.png) no-repeat 19px 13px
+      button
+        width: 100%
+        font-size: 16px
+        font-family: 'proxima_nova_rgregular'
+        +border-radius(20px)
+        height: 40px
+        margin-top: 12px
+        span
+          position: relative
+          +s(button-ico)
+          left: 3px
+
 
 
 
