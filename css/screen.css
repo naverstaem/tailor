@@ -1833,7 +1833,7 @@ header .header__form .form__form button, .header--bottom .header__form .form__fo
 .also .item form input[name="name"] { background: #ffffff url(../img/name.png) no-repeat 20px 9px; }
 .also .item form input[name="email"] { background: #ffffff url(../img/email.png) no-repeat 19px 13px; }
 .also .item form button { width: 100%; font-size: 16px; font-family: "proxima_nova_rgregular"; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; height: 40px; margin-top: 12px; }
-.also .item form button span { position: relative; background: url('../img/icons-s071bf0e592.png') 0 0 no-repeat; width: 9px; height: 10px; left: 3px; }
+.also .item form button span { position: relative; background: url('../img/icons-s071bf0e592.png') 0 0 no-repeat; width: 9px; height: 10px; left: 3px; display: inline-block; }
 
 footer { background: #14644c; padding: 25px 0; font-size: 14px; position: relative; color: #d0dbef; font-family: "proxima_nova_rgregular"; text-align: center; }
 footer .footer__top a { display: inline-block; color: #f5e047; text-decoration: none; }
