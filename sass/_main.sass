@@ -241,6 +241,52 @@ header
         &:first-child
           margin-top: 100px
 .why
+  background: url(../img/why_bg.jpg)
+  +cover
+  &__main
+    padding: 55px 0
+    ul
+      font-size: 16px
+      color: #ffffff
+      font-family: 'proxima_nova_rgregular'
+      list-style: none
+      padding-left: 0
+      li
+        position: relative
+        margin-top: 20px
+        padding-left: 45px
+        &:before
+          position: absolute
+          content: ''
+          +s(list-ico)
+          top: 15px
+          left: 0
+  &__text
+    padding-right: 50px
+    h2
+      text-align: right
+      color: #ffffff
+      line-height: 1.4em
+      span
+        font-size: 45px
+        color: #f8ea50
+    p
+      text-align: right
+      color: #ffffff
+      font-family: 'proxima_nova_rgregular'
+      font-size: 16px
+      margin-top: 35px
+
+  &__gallery
+    .container
+      max-width: 1268px
+
+  &__img
+    margin-top: 20px
+    padding: 0
+    text-align: center
+    img
+      max-width: 100%
 
 
 .specs
