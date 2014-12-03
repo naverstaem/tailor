@@ -1,0 +1,590 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background: rgb(16,160,118)
+
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #3f3f3f !important
+  font-family: 'open_sansbold'
+.navbar-default
+  border: none
+  background: none
+  padding: 13px 0
+  text-align: center
+  .icon-bar
+    background-color: #3f3f3f !important
+
+  .navbar-nav
+    margin-top: 10px
+    margin-left: -30px
+    li
+      margin-right: 0
+      &:last-of-type
+        margin-right: 0
+      a
+        color: #ffffff // text color
+        font-family: 'proxima_nova_rgregular'
+        font-size: 15px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        border-bottom: solid 1px rgba(0,0,0, 0)
+        margin: 10px 15px
+        padding: 0
+        +transition(background,.1s)
+        &:hover, &.active, &:focus
+          +background-clip(padding-box)
+          background: transparent
+          color: #f0ff00
+          border-bottom: dotted 1px
+
+
+
+  .navbar-right
+    margin-top: 6px
+
+    .right-b
+      display: inline-block
+      text-align: right
+      vertical-align: middle
+      margin-right: 16px
+      h2
+        color: #ffffff // text color
+        font-weight: normal
+        font-size: 25px
+        margin: 0
+        font-family: 'proxima_nova_ltlight'
+        line-height: 1em
+        span
+          font-family: 'proxima_nova_rgbold'
+      a
+        color: #fffc14 // text color
+        font-size: 13px
+        display: inline-block
+        font-family: '''proxima_nova_ltlight'
+        line-height: .8em
+        text-decoration: underline
+        margin-top: -1px
+        &:hover
+          text-decoration: none
+    .right-b-after
+      display: inline-block
+      vertical-align: middle
+      margin-top: -10px
+      .callme
+        font-family: 'open_sanssemibold'
+        +border-radius(3px)
+        padding: 8px 28px
+        +background-clip(padding-box)
+        +text-shadow(0 1px 0 rgba(0,0,0,.08))
+        background: #f0ff00
+        +box-shadow(0 2px 0 #99a300, inset 0 -1px 0 rgba(255,255,255,.11))
+        font-size: 13px
+        font-family: 'proxima_nova_rgregular'
+        color: #191919
+        &:hover
+          background: lighten(#f0ff00, 10%)
+          +box-shadow(0 0 0 0)
+          color: #191919
+
+header
+  background: url(../img/header_bg.jpg)
+  +box-shadow(0 35px 150px -50px black)
+  +cover
+  position: relative
+  +box
+  padding-top: 40px
+  padding-bottom: 90px
+
+  .header__text
+    position: relative
+    color: #444
+    +clr
+    text-align: left
+    p
+      font-size: 18px
+      font-family: 'proxima_nova_ltlight'
+      margin-top: 10px
+  .header__title
+    display: inline-block
+    h2
+      font-size: 26px
+      text-align: right
+      margin-top: 0
+    h1
+      font-size: 70px
+      line-height: 1em
+      font-family: 'turbotaheavy'
+      color: #10a076
+      margin-bottom: 0
+  .header__price
+    text-align: right
+    .header__nomenclature
+      display: inline-block
+      font-family: 'proxima_nova_rgregular'
+      color: #151515
+      font-size: 14px
+      position: relative
+      +border-radius(3px)
+      @include background-clip(padding-box)
+      background: #b6ebdb
+      text-align: center
+      padding-top: 8px
+      width: 178px
+      height: 36px
+      margin-bottom: 10px
+    .price--old
+      display: inline-block
+      font-family: 'proxima_nova_condensedRgIt'
+      font-size: 38px
+      color: #707070
+      span
+        font-family: 'proxima_novathin_italic'
+        font-size: 24px
+    .price--new
+      line-height: 1em
+      display: inline-block
+      font-family: 'turbotabolditalic'
+      color: #10a076
+      font-size: 99px
+      span
+        font-size: 69px
+  .header__form
+    position: relative
+    text-align: right
+    .form__top
+      h2
+        font-family: 'proxima_nova_rgregular'
+        font-size: 32px
+        color: #000
+        text-transform: uppercase
+        margin-bottom: 0
+      h3
+        font-family: 'proxima_nova_rgregular'
+        font-size: 29px
+        color: #000
+        margin-top: 0
+        margin-bottom: 0
+    .form__form
+      margin-top: 15px
+      input
+        border: 1px solid #11a379
+        +border-radius(5px)
+        +background-clip(padding-box)
+        background: #fff
+        height: 50px
+        width: 100%
+        max-width: 292px
+        margin-bottom: 20px
+        font-size: 14px
+        padding-left: 15px
+      button
+        padding: 10px 33px
+        display: block
+
+.intro
+  background: rgb(16,160,118)
+  padding: 35px
+  text-align: center
+  font-family: 'proxima_nova_ltlight'
+  font-size: 18px
+  color: #ffffff
+  position: relative
+  .intro__down
+    position: absolute
+    top: -23px
+    left: 50%
+    +transform(translateX(-50%))
+    width: 46px
+    height: 46px
+    +border-radius(50%)
+    +box-shadow(0 2px 0 #d04817)
+    +background-image(linear-gradient(to bottom, #ff7145 -25%, #ff4a11 125%))
+    &:before
+      position: absolute
+      content: ''
+      top: 50%
+      left: 50%
+      +transform(translate(-50%,-50%))
+      +s(down-ico)
+
+
+
+
+.about
+  padding-top: 60px
+  color: #0b0b0b
+  h2
+    text-align: left
+
+  h3
+    font-size: 20px
+    font-family: 'proxima_novaregular_italic'
+  p
+    font-size: 16px
+    font-family: 'proxima_nova_rgregular'
+  .row
+    &:first-of-type
+      margin-top: 30px
+      img
+        margin-left: -45px
+      p
+        margin-top: 30px
+    &:last-child
+      margin-top: 15px
+      p
+        &:first-child
+          margin-top: 100px
+.why
+  background: url(../img/why_bg.jpg)
+  +cover
+  &__main
+    padding: 55px 0
+    ul
+      font-size: 16px
+      color: #ffffff
+      font-family: 'proxima_nova_rgregular'
+      list-style: none
+      padding-left: 0
+      li
+        position: relative
+        margin-top: 20px
+        padding-left: 45px
+        &:before
+          position: absolute
+          content: ''
+          +s(list-ico)
+          top: 15px
+          left: 0
+  &__text
+    padding-right: 50px
+    h2
+      text-align: right
+      color: #ffffff
+      line-height: 1.4em
+      span
+        font-size: 45px
+        color: #f8ea50
+    p
+      text-align: right
+      color: #ffffff
+      font-family: 'proxima_nova_rgregular'
+      font-size: 16px
+      margin-top: 35px
+
+  &__gallery
+    .container
+      max-width: 1268px
+
+  &__img
+    margin-top: 20px
+    padding: 0
+    text-align: center
+    img
+      max-width: 100%
+
+
+.specs
+  padding-top: 70px
+  h2
+    font-family: 'turbotaheavy'
+    font-size: 25px
+    color: #0a0a0a
+    span
+      font-family: 'turbotabolditalic'
+      color: #10a076
+  .row
+    &:first-of-type
+      img
+        margin-left: -45px
+        margin-top: 20px
+      padding-bottom: 30px
+      border-bottom: solid 1px #dedede
+    &:nth-child(2)
+      padding-top: 40px
+    &:last-of-type
+      p
+        color: #2e242f
+        font-size: 29px
+        font-family: 'turbotabolditalic'
+        margin-top: 40px
+      img
+        margin-top: -60px
+
+  &__features
+    font-size: 20px
+    color: #2e242f
+    font-family: 'proxima_nova_rgregular'
+    list-style: none
+    padding-left: 0
+    margin-top: 150px
+    li
+      position: relative
+      margin-top: 25px
+      padding-left: 45px
+      &:before
+        position: absolute
+        content: ''
+        +s(list-ico2)
+        top: 5px
+        left: 0
+      &:nth-child(2),&:nth-child(3)
+        &:before
+          top: -5px
+  &__complectation
+    margin-top: 40px
+    font-size: 20px
+    color: #2e242f
+    display: inline-block
+    h3
+      font-family: 'proxima_nova_rgbold'
+      text-transform: uppercase
+    ul
+      font-family: 'proxima_nova_rgregular'
+      list-style: none
+      padding-left: 0
+      margin-top: 17px
+      li
+        position: relative
+        padding-left: 30px
+        line-height: 1.2em
+        &:before
+          position: absolute
+          content: ''
+          +s(list-ico3)
+          top: 3px
+          left: 0
+  &__material
+    @extend .specs__complectation
+    vertical-align: top
+    margin-left: 20px
+    ul
+      li
+        padding-left: 0
+        &:before
+          background: none
+
+.work
+  background: url(../img/work_bg.jpg)
+  +cover
+  padding: 35px 0
+  h2
+    color: white
+  .item
+    text-align: center
+    padding: 0 40px
+    p
+      font-family: 'proxima_nova_rgregular'
+      font-size: 16px
+      color: #ffffff
+      display: block
+      margin-top: 15px
+    img
+      display: block
+      margin: 0 auto
+
+
+
+
+
+.review
+  padding: 60px 0
+  border-bottom-width: 7px
+  border-image: url(../img/wave.png)
+  border-image-repeat: repeat
+  border-image-slice: 0 1 7 1
+  h2
+    text-align: right
+    font-family: 'turbotabook'
+    margin: 0
+  &__header
+  &__img
+    display: inline-block
+    width: 81px
+    height: 81px
+    margin-right: 20px
+    margin-bottom: 15px
+    img
+      +border-radius(50%)
+  &__name
+    display: inline-block
+    vertical-align: middle
+    h3
+      font-family: 'proxima_nova_rgregular'
+      font-size: 16px
+      text-transform: uppercase
+      color: #000
+      margin: 0
+    h4
+      font-family: 'proxima_nova_rgregular'
+      font-size: 12px
+      color: #b8b8b8
+      margin: 0
+  &__text
+    font-family: 'proxima_nova_rgregular'
+    font-size: 16px
+    color: #838383
+  &__controls
+    position: relative
+    margin-top: 25px
+    .carousel-control
+      background-image: none
+      width: 37px
+      height: auto
+      &.left
+        +s(prev)
+        right: 47px
+        left: auto
+      &.right
+        +s(next)
+
+
+
+
+
+
+.header--bottom
+  @extend header
+  background: url(../img/header_bg.jpg)
+  +cover
+  position: relative
+
+
+.also
+  background: rgb(16, 160,118)
+  padding-top: 40px
+  padding-bottom: 85px
+  h2
+    color: #ffffff
+  .item
+    border: 2px solid rgba(29,30,31,.13)
+    @include border-radius(10px)
+    background-color: #fff
+    padding: 20px
+    text-align: center
+    font-family: 'proxima_nova_rgregular'
+    margin-top: 40px
+    h3
+      font-size: 22px
+      color: #3b3b3b
+      margin-top: 10px
+    img
+      display: inline-block
+      width: 152px
+      height: 152px
+      margin: 20px 0
+      img
+        +border-radius(50%)
+    .price-b--old
+      font-size: 18px
+      color: #3b3b3b
+      span
+    .price-b
+      font-size: 36px
+      color: #ed1b24
+      line-height: 1em
+      margin-bottom: 20px
+    form
+      input
+        +placeholder
+          font-family: 'proxima_novalight_italic'
+          font-size: 16px
+          color: #949494
+        height: 40px
+        width: 100%
+        border: 1px solid rgba(29,30,31,.13)
+        +border-radius(21px)
+        margin-bottom: 10px
+        font-size: 16px
+        padding-left: 58px
+        &[name="name"]
+          background: #ffffff url(../img/name.png) no-repeat 20px 9px
+        &[name="email"]
+          background: #ffffff url(../img/email.png) no-repeat 19px 13px
+      button
+        width: 100%
+        font-size: 16px
+        font-family: 'proxima_nova_rgregular'
+        +border-radius(20px)
+        height: 40px
+        margin-top: 12px
+        span
+          position: relative
+          +s(button-ico)
+          left: 3px
+          display: inline-block
+
+
+
+footer
+  background: #14644c
+  padding: 25px 0
+  font-size: 14px
+  position: relative
+  color: #d0dbef
+  font-family: 'proxima_nova_rgregular'
+  text-align: center
+  .footer__top
+    a
+      display: inline-block
+      color: #f5e047
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .footer__bottom
+    margin-top: 12px
+    span
+      margin-left: 10px
+
+
+
+//media queries
+
+@media (max-width: $screen-md-min)
+  .specs
+    .row
+      &:nth-child(2), &:first-of-type
+        img
+          max-width: 100%
+  header
+    .header__form
+      background: rgba(#fff,.7)
+      +border-radius(15px)
+      padding: 10px
+
+@media (max-width: $screen-sm-min)
+  .about
+    .row
+      &:first-of-type, &:last-child
+        img
+          max-width: 100%
+  .specs
+    .row
+      &:last-of-type
+        img
+          max-width: 100%
+
+  header
+    .header__title
+      h1
+        font-size: 48px
+      h2
+        text-align: left
+  .why__text
+    h2
+      span
+        font-size: 36px
+    //font-size: 36px !important
+  //.navbar-default
+  //  .navbar-nav
+  //    li
+  //      a
+  //        &:hover, &:active, &:focus
+  //          margin: 10px 15px
+@media (max-width: $screen-xs-min)
+

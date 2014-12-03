@@ -1,0 +1,196 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+//body
+//  font-family: Arial, sans-serif
+//  font-size: 12px
+//  line-height: 1.4
+//=pfl
+  font-family: "Conv_PFDinTextCondPro-Light"
+  font-weight: normal
+  font-style: normal
+
+
+
+*
+  outline: none !important
+
+.container
+  max-width: 965px
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+
+.icon
+  display: inline-block
+  position: relative
+
+body
+  font-size: 18px
+  line-height: 1.4
+  background: rgb(16,160,118)
+  color: #444
+  font-family: 'proxima_nova_rgregular'
+  //+pfl
+.out
+  position: relative
+  //overflow: hidden
+  max-width: 1800px
+  background: #ffffff
+  margin: 0 auto
+input, textarea
+  +placeholder
+    font-size: 13px
+    text-transform: none
+    color: #a3a3a3
+    font-family: 'proxima_nova_ltlight'
+%in
+  max-width: 1200px
+  width: 1000px
+  margin-left: auto
+  margin-right: auto
+
+.fancybox-inner
+  +box-shadow(0 38px 40px -40px black)
+.myFancyClose
+  position: absolute
+  top: -25px
+  left: 50%
+  +transform(translateX(-50%))
+  //+s(close)
+
+.btn
+  display: inline-block
+  font-size: 18px
+  text-decoration: none
+  text-transform: uppercase
+  +transition(background, .5s)
+  +background-clip(padding-box)
+  color: #ffffff
+  +text-shadow(0 1px 0 rgba(0,0,0,.1))
+  +border-radius(3px)
+  background: #fd5b21
+  @include box-shadow(0 2px 0 #d04817)
+  +background-image(linear-gradient(bottom, #ff4a11 -25%, #ff7145 125%))
+  font-family: 'proxima_nova_rgbold'
+  &:hover
+    background: lighten(#fd5b21, 10%)
+    +box-shadow(0 0 0 0)
+    color: #fff
+.title
+  font-size: 35px
+  font-family: 'turbotabolditalic'
+  line-height: 1.2em
+  color: #0b0b0b
+  text-transform: none
+  font-weight: normal
+  position: relative
+  text-align: center
+  span
+
+
+
+
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 0
+  padding: 0
+  .counter-title
+    color: #3e3e3e
+    font-size: 14px
+    display: inline-block
+    padding: 0 10px
+  .bl
+    float: left
+    text-align: center
+    margin: 0 12px
+    &:last-of-type
+      margin-right: 0
+    &:first-of-type
+      margin-left: 0
+    span
+      display: inline-block
+      font-family: 'proxima_nova_rgregular'
+      font-size: 28px
+      color: white
+      padding-top: 2px
+      width: 55px
+      height: 39px
+      position: relative
+      +border-radius(3px)
+      +background-clip(padding-box)
+      +box-shadow(0 2px 0 #000)
+      +background-image(linear-gradient(to bottom, #4d4d4d -25%, #272727 125%))
+
+      &:after
+        position: absolute
+        font-family: 'proxima_nova_rgregular'
+        content: ":"
+        font-size: 33px
+        color: #4d4d4d
+        top: -4px
+        right: -15px
+      &.s
+        &:after
+          content: ""
+
+
+    p
+      font-family: 'proxima_nova_ltlight'
+      font-size: 13px
+      color: #a0a0a0
+      margin-top: 6px
+
+
+
